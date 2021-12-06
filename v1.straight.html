@@ -108,7 +108,7 @@
     var playerZ       = null;                    // player relative z distance from camera (computed)
     var fogDensity    = 5;                       // exponential fog density
     var position      = 0;                       // current camera Z position (add playerZ to get player's absolute Z position)
-    var speed         = 0;                       // current speed
+    var speed         = 20000;                       // current speed
     var maxSpeed      = segmentLength/step;      // top speed (ensure we can't move more than 1 segment in a single frame to make collision detection easier)
     var accel         =  maxSpeed/5;             // acceleration rate - tuned until it 'felt' right
     var breaking      = -maxSpeed;               // deceleration rate when braking
